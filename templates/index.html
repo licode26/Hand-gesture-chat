@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Chat - Communication Made Easy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-hands"></i> Gesture Chat</h1>
+            <p>Communicate using hand gestures</p>
+            <nav>
+                <a href="/" class="nav-link active">Chat</a>
+                <a href="/tutorial" class="nav-link">Tutorial</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="video-container">
+                    <video id="videoElement" autoplay muted></video>
+                    <canvas id="overlayCanvas"></canvas>
+                    <div class="video-controls">
+                        <button id="startCamera" class="btn btn-primary">
+                            <i class="fas fa-video"></i> Start Camera
+                        </button>
+                        <button id="stopCamera" class="btn btn-secondary" disabled>
+                            <i class="fas fa-video-slash"></i> Stop Camera
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Camera Size Controls -->
+                <div class="camera-controls">
+                    <h4><i class="fas fa-expand-arrows-alt"></i> Camera Size:</h4>
+                    <div class="size-controls">
+                        <button id="sizeSmall" class="btn btn-info size-btn">
+                            <i class="fas fa-compress"></i> Small
+                        </button>
+                        <button id="sizeMedium" class="btn btn-info size-btn active">
+                            <i class="fas fa-expand"></i> Medium
+                        </button>
+                        <button id="sizeLarge" class="btn btn-info size-btn">
+                            <i class="fas fa-expand-arrows-alt"></i> Large
+                        </button>
+                        <button id="sizeFullscreen" class="btn btn-info size-btn">
+                            <i class="fas fa-desktop"></i> Full Width
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Gesture Recognition Status -->
+                <div class="gesture-status">
+                    <div class="current-gesture">
+                        <h3>Current Gesture:</h3>
+                        <div id="gestureDisplay" class="gesture-display">
+                            <span id="gestureName">None</span>
+                            <span id="gestureConfidence"></span>
+                        </div>
+                    </div>
+                    <div class="recognized-word">
+                        <h3>Recognized Word:</h3>
+                        <div id="wordDisplay" class="word-display">None</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Word Collection Section -->
+            <section class="word-collection">
+                <h3>Collected Words:</h3>
+                <div id="collectedWords" class="word-list"></div>
+                <div class="word-controls">
+                    <button id="addWord" class="btn btn-success" disabled>
+                        <i class="fas fa-plus"></i> Add Word
+                    </button>
+                    <button id="clearWords" class="btn btn-warning">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                    <button id="predictSentence" class="btn btn-info">
+                        <i class="fas fa-robot"></i> AI Sentences
+                    </button>
+                </div>
+            </section>
+
+            <!-- AI Sentence Suggestions -->
+            <section class="sentence-suggestions">
+                <h3><i class="fas fa-robot"></i> AI-Powered Sentence Suggestions:</h3>
+                <div id="sentenceSuggestions" class="suggestions-list"></div>
+            </section>
+
+            <!-- Chat Section -->
+            <section class="chat-section">
+                <h3>Chat Messages:</h3>
+                <div id="chatMessages" class="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Type your message or select from suggestions..." />
+                    <button id="sendMessage" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div id="connectionStatus" class="status-item">
+                <i class="fas fa-circle text-success"></i> Connected
+            </div>
+            <div id="cameraStatus" class="status-item">
+                <i class="fas fa-video-slash text-danger"></i> Camera Off
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

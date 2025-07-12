@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Tutorial - Learn Hand Gestures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-graduation-cap"></i> Gesture Tutorial</h1>
+            <p>Learn how to use hand gestures for communication</p>
+            <nav>
+                <a href="/" class="nav-link">Chat</a>
+                <a href="/tutorial" class="nav-link active">Tutorial</a>
+            </nav>
+        </header>
+
+        <!-- Tutorial Content -->
+        <main class="tutorial-content">
+            <!-- Introduction -->
+            <section class="tutorial-intro">
+                <h2>Welcome to Gesture Chat!</h2>
+                <p>This system helps you communicate using simple hand gestures. Each gesture represents a word that you can use to build sentences and send messages.</p>
+                
+                <div class="tutorial-tips">
+                    <h3><i class="fas fa-lightbulb"></i> Tips for Best Results:</h3>
+                    <ul>
+                        <li>Make sure your hand is clearly visible to the camera</li>
+                        <li>Use good lighting for better recognition</li>
+                        <li>Hold gestures steady for 1-2 seconds</li>
+                        <li>Keep your hand at a comfortable distance from the camera</li>
+                        <li>Practice gestures slowly and clearly</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Comprehensive Gesture Guide -->
+            <section class="gesture-guide">
+                <h2>Reliable Gesture Guide - 40 Working Gestures</h2>
+                <p class="guide-intro">Our system recognizes 40 reliable gestures across 5 main categories. Each gesture maps to a specific word that can be combined to create natural sentences.</p>
+
+                <div class="gesture-grid">
+
+                    <!-- Numbers (7 gestures) -->
+                    <div class="gesture-category">
+                        <h3><i class="fas fa-sort-numeric-up"></i> Numbers (7 Gestures)</h3>
+                        <div class="gesture-items">
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👊</div>
+                                <div class="gesture-info">
+                                    <h4>Zero</h4>
+                                    <p>Closed fist</p>
+                                    <span class="word-tag">Word: "zero"</span>
+                                    <div class="gesture-demo">
+                                        <video class="demo-video" autoplay muted loop>
+                                            <source src="/static/videos/zero_demo.mp4" type="video/mp4">
+                                            <div class="video-placeholder">🎥 Demo: Make a closed fist</div>
+                                        </video>
+                                        <button class="try-gesture-btn" data-gesture="zero" data-word="zero">
+                                            <i class="fas fa-camera"></i> Try This Gesture
+                                        </button>
+                                        <div class="gesture-feedback" id="feedback-zero"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👆</div>
+                                <div class="gesture-info">
+                                    <h4>One</h4>
+                                    <p>Index finger up</p>
+                                    <span class="word-tag">Word: "one"</span>
+                                    <div class="gesture-demo">
+                                        <video class="demo-video" autoplay muted loop>
+                                            <source src="/static/videos/one_demo.mp4" type="video/mp4">
+                                            <div class="video-placeholder">🎥 Demo: Point index finger up</div>
+                                        </video>
+                                        <button class="try-gesture-btn" data-gesture="one" data-word="one">
+                                            <i class="fas fa-camera"></i> Try This Gesture
+                                        </button>
+                                        <div class="gesture-feedback" id="feedback-one"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">✌️</div>
+                                <div class="gesture-info">
+                                    <h4>Two</h4>
+                                    <p>Index and middle finger</p>
+                                    <span class="word-tag">Word: "two"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🤟</div>
+                                <div class="gesture-info">
+                                    <h4>Three</h4>
+                                    <p>Three fingers up</p>
+                                    <span class="word-tag">Word: "three"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🖖</div>
+                                <div class="gesture-info">
+                                    <h4>Four</h4>
+                                    <p>Four fingers (no thumb)</p>
+                                    <span class="word-tag">Word: "four"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🖐️</div>
+                                <div class="gesture-info">
+                                    <h4>Five</h4>
+                                    <p>All fingers extended</p>
+                                    <span class="word-tag">Word: "five"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">✌️</div>
+                                <div class="gesture-info">
+                                    <h4>Peace</h4>
+                                    <p>Peace sign (also means two)</p>
+                                    <span class="word-tag">Word: "peace"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👌</div>
+                                <div class="gesture-info">
+                                    <h4>OK</h4>
+                                    <p>Thumb and index circle</p>
+                                    <span class="word-tag">Word: "okay"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emotions (6 gestures) -->
+                    <div class="gesture-category">
+                        <h3><i class="fas fa-heart"></i> Emotions (6 Gestures)</h3>
+                        <div class="gesture-items">
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👍</div>
+                                <div class="gesture-info">
+                                    <h4>Good</h4>
+                                    <p>Thumbs up</p>
+                                    <span class="word-tag">Word: "good"</span>
+                                    <div class="gesture-demo">
+                                        <video class="demo-video" autoplay muted loop>
+                                            <source src="/static/videos/thumbs_up_demo.mp4" type="video/mp4">
+                                            <div class="video-placeholder">🎥 Demo: Thumbs up gesture</div>
+                                        </video>
+                                        <button class="try-gesture-btn" data-gesture="thumbs_up" data-word="good">
+                                            <i class="fas fa-camera"></i> Try This Gesture
+                                        </button>
+                                        <div class="gesture-feedback" id="feedback-thumbs_up"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👎</div>
+                                <div class="gesture-info">
+                                    <h4>Bad</h4>
+                                    <p>Thumbs down</p>
+                                    <span class="word-tag">Word: "bad"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">❤️</div>
+                                <div class="gesture-info">
+                                    <h4>Love</h4>
+                                    <p>Index and pinky up</p>
+                                    <span class="word-tag">Word: "love"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">😊</div>
+                                <div class="gesture-info">
+                                    <h4>Happy</h4>
+                                    <p>Open palm with enthusiasm</p>
+                                    <span class="word-tag">Word: "happy"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">😢</div>
+                                <div class="gesture-info">
+                                    <h4>Sad</h4>
+                                    <p>Closed fist, drooping</p>
+                                    <span class="word-tag">Word: "sad"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">😰</div>
+                                <div class="gesture-info">
+                                    <h4>Worried</h4>
+                                    <p>Hand to forehead</p>
+                                    <span class="word-tag">Word: "worried"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">😴</div>
+                                <div class="gesture-info">
+                                    <h4>Tired</h4>
+                                    <p>Rubbing eyes gesture</p>
+                                    <span class="word-tag">Word: "tired"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🙏</div>
+                                <div class="gesture-info">
+                                    <h4>Grateful</h4>
+                                    <p>Prayer/bow gesture</p>
+                                    <span class="word-tag">Word: "grateful"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Basic Needs & Requests (20 gestures) -->
+                    <div class="gesture-category">
+                        <h3><i class="fas fa-hand-holding-heart"></i> Basic Needs & Requests (20 Gestures)</h3>
+                        <div class="gesture-items">
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🆘</div>
+                                <div class="gesture-info">
+                                    <h4>Help</h4>
+                                    <p>Waving for help</p>
+                                    <span class="word-tag">Word: "help"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">✋</div>
+                                <div class="gesture-info">
+                                    <h4>Stop</h4>
+                                    <p>Open palm forward</p>
+                                    <span class="word-tag">Word: "stop"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🍽️</div>
+                                <div class="gesture-info">
+                                    <h4>Eat</h4>
+                                    <p>Hand to mouth</p>
+                                    <span class="word-tag">Word: "eat"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🥤</div>
+                                <div class="gesture-info">
+                                    <h4>Drink</h4>
+                                    <p>Cup gesture</p>
+                                    <span class="word-tag">Word: "drink"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">😴</div>
+                                <div class="gesture-info">
+                                    <h4>Sleep</h4>
+                                    <p>Hands by head</p>
+                                    <span class="word-tag">Word: "sleep"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🚽</div>
+                                <div class="gesture-info">
+                                    <h4>Bathroom</h4>
+                                    <p>Urgent pointing</p>
+                                    <span class="word-tag">Word: "bathroom"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🔥</div>
+                                <div class="gesture-info">
+                                    <h4>Hot</h4>
+                                    <p>Fanning gesture</p>
+                                    <span class="word-tag">Word: "hot"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🥶</div>
+                                <div class="gesture-info">
+                                    <h4>Cold</h4>
+                                    <p>Shivering gesture</p>
+                                    <span class="word-tag">Word: "cold"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Communication & Social (20 gestures) -->
+                    <div class="gesture-category">
+                        <h3><i class="fas fa-comments"></i> Communication & Social (20 Gestures)</h3>
+                        <div class="gesture-items">
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👍</div>
+                                <div class="gesture-info">
+                                    <h4>Thumbs Up</h4>
+                                    <p>Thumb pointing up</p>
+                                    <span class="word-tag">Word: "good"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👌</div>
+                                <div class="gesture-info">
+                                    <h4>OK Sign</h4>
+                                    <p>Thumb and index finger circle</p>
+                                    <span class="word-tag">Word: "okay"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👊</div>
+                                <div class="gesture-info">
+                                    <h4>Fist</h4>
+                                    <p>Closed fist</p>
+                                    <span class="word-tag">Word: "stop"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👋</div>
+                                <div class="gesture-info">
+                                    <h4>Wave</h4>
+                                    <p>Open palm waving</p>
+                                    <span class="word-tag">Word: "bye"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Gestures -->
+                    <div class="gesture-category">
+                        <h3><i class="fas fa-heart"></i> Special Gestures</h3>
+                        <div class="gesture-items">
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🤟</div>
+                                <div class="gesture-info">
+                                    <h4>Love Sign</h4>
+                                    <p>Index and pinky up</p>
+                                    <span class="word-tag">Word: "love"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">🤙</div>
+                                <div class="gesture-info">
+                                    <h4>Call Me</h4>
+                                    <p>Thumb and pinky extended</p>
+                                    <span class="word-tag">Word: "call"</span>
+                                </div>
+                            </div>
+                            <div class="gesture-item">
+                                <div class="gesture-icon">👉</div>
+                                <div class="gesture-info">
+                                    <h4>Pointing</h4>
+                                    <p>Index finger pointing</p>
+                                    <span class="word-tag">Word: "you"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How to Use -->
+            <section class="how-to-use">
+                <h2>How to Use the System</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Start Camera</h3>
+                            <p>Click "Start Camera" to begin gesture recognition</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Make Gestures</h3>
+                            <p>Perform gestures in front of the camera. The system will recognize and display the word</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Collect Words</h3>
+                            <p>Click "Add Word" to collect recognized words</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Get Suggestions</h3>
+                            <p>Click "Suggest Sentences" to see possible sentences using your words</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Send Message</h3>
+                            <p>Select a suggestion or type your own message and click "Send"</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Section -->
+            <section class="practice-section">
+                <h2>Ready to Practice?</h2>
+                <p>Now that you know the gestures, let's start practicing!</p>
+                <a href="/" class="btn btn-primary btn-large">
+                    <i class="fas fa-play"></i> Start Practicing
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <!-- Socket.IO for real-time communication -->
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="/static/js/tutorial.js"></script>
+</body>
+</html>
