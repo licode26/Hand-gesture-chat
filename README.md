@@ -196,3 +196,8 @@ For support, please open an issue on GitHub or contact the development team.
 ---
 
 **Made with ❤️ for accessibility and communication**
+
+<img width="1796" height="774" alt="Screenshot 2025-08-01 093502" src="https://github.com/user-attachments/assets/7b14a3e0-0475-4e56-9e54-b3a3523d7f71" />
+
+
+
