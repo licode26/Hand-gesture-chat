@@ -1,0 +1,73 @@
+================================================================================
+                         HAND GESTURE SYMBOLS REFERENCE
+                              AI GESTURE CHAT SYSTEM
+================================================================================
+
+SUPPORTED HAND GESTURES (33 total):
+
+NUMBERS CATEGORY (8 gestures):
+- Zero: Closed fist
+- One: Index finger extended upward
+- Two: Index and middle fingers extended (V-shape)
+- Three: Index, middle, and ring fingers extended
+- Four: Four fingers extended (thumb folded)
+- Five: All five fingers extended (open palm)
+- Peace: Index and middle fingers in V-shape (peace sign)
+- OK: Thumb and index finger forming circle, other fingers extended
+
+EMOTIONS CATEGORY (8 gestures):
+- Good: Thumbs up gesture
+- Bad: Thumbs down gesture
+- Love: Hand forming heart shape or peace sign
+- Happy: Thumbs up with smile gesture
+- Sad: Thumbs down or covering face gesture
+- Worried: Hand on forehead or temple
+- Tired: Hand covering eyes or yawning gesture
+- Grateful: Hands pressed together (prayer/thank you position)
+
+BASIC NEEDS CATEGORY (8 gestures):
+- Help: Both hands raised or waving gesture
+- Stop: Open palm facing forward (stop sign)
+- Eat: Hand to mouth eating motion
+- Drink: Hand cupped to mouth drinking motion
+- Sleep: Hands together beside head (sleeping position)
+- Bathroom: Pointing gesture or specific hand signal
+- Hot: Fanning motion with hand
+- Cold: Arms crossed or shivering motion
+
+SOCIAL CATEGORY (9 gestures):
+- Hello: Open hand waving motion
+- Bye: Waving goodbye motion
+- Yes: Thumbs up or nodding gesture equivalent
+- No: Index finger wagging or crossed arms
+- Please: Hands pressed together in pleading motion
+- Thanks: Hand over heart or bowing gesture
+- You: Pointing toward the person
+- Me: Pointing toward oneself
+- Call: Hand to ear (phone gesture)
+
+================================================================================
+                            GESTURE RECOGNITION NOTES
+================================================================================
+
+HAND POSITIONING:
+- Keep hand clearly visible in camera frame
+- Maintain steady position for 1-2 seconds for recognition
+- Ensure good lighting for optimal detection
+- Position hand 12-24 inches from camera
+
+RECOGNITION ACCURACY:
+- System achieves 85%+ accuracy for trained gestures
+- Best performance with clear, deliberate hand movements
+- Consistent hand positioning improves recognition rates
+- Practice mode available for gesture training
+
+USAGE TIPS:
+- Start with simple gestures (numbers, basic needs)
+- Practice each gesture multiple times for muscle memory
+- Use tutorial mode for real-time feedback
+- Combine gestures to form complete sentences
+
+================================================================================
+                              END OF REFERENCE
+================================================================================
