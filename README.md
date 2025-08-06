@@ -199,5 +199,16 @@ For support, please open an issue on GitHub or contact the development team.
 
 <img width="1796" height="774" alt="Screenshot 2025-08-01 093502" src="https://github.com/user-attachments/assets/7b14a3e0-0475-4e56-9e54-b3a3523d7f71" />
 
+<img width="1742" height="1004" alt="image" src="https://github.com/user-attachments/assets/db4a3573-a14d-4d9d-b352-02c075a49460" />
+
+<img width="1843" height="1005" alt="image" src="https://github.com/user-attachments/assets/54aaf341-8642-4541-bce1-4c6c9bf048e0" />
+
+<img width="1855" height="932" alt="image" src="https://github.com/user-attachments/assets/4562c9be-f410-4fea-b211-1d7a91eb7038" />
+
+<img width="1850" height="989" alt="image" src="https://github.com/user-attachments/assets/11f2c893-f593-4325-94c5-8582d1a22cb0" />
+
+<img width="1833" height="826" alt="image" src="https://github.com/user-attachments/assets/1e4f2a77-92ee-417a-80a8-a530b3a7f1ec" />
+
+
 
 
